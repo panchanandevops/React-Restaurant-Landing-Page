@@ -1,0 +1,11 @@
+
+services:
+  frontend:
+    container_name: React-landing-page
+    image: panchanandevops/react-landing-page:v1.0.0
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 3000:8080
+    
