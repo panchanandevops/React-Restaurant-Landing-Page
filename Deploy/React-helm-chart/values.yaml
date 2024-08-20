@@ -1,0 +1,34 @@
+commonLabel: react-landing-app
+
+namespace:
+  name: dev
+
+extraLabels:
+  environment: dev
+  team: frontend
+
+deployment:
+  name: react-landing-app-deployment
+  replicas: 2
+  container:
+    name: react-landing-app
+    port: 8080
+    image: panchanandevops/react-landing-page:v1.0.0
+    resources:
+      limits:
+        memory: "512Mi"
+        cpu: "500m"
+      requests:
+        memory: "256Mi"
+        cpu: "250m"
+
+service:
+  name: react-landing-app-service
+  type: ClusterIP
+  port: 3000
+
+ingress:
+  enabled: true
+  name: react-landing-app-ingress
+  className: nginx
+  host: panchanandevops.com
