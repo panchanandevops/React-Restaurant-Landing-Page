@@ -1,0 +1,20 @@
+namespace: prod
+namePrefix: prod-
+resources:
+  - ../../base
+  - 3-react-ingress.yaml
+patches:
+  - target:
+      group: apps
+      version: v1
+      kind: Deployment
+      name: react-landing-app-deployment
+    path: patch-resources.yaml
+  - target:
+      group: apps
+      version: v1
+      kind: Deployment
+      name: react-landing-app-deployment
+    path: patch-replicas.yaml
+commonLabels:
+  environment: prod

@@ -1,0 +1,4 @@
+resources:
+  - 0-namespace.yaml
+  - 1-react-deployment.yaml
+  - 2-react-service.yaml

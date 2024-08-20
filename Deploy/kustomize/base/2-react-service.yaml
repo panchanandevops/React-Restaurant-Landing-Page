@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: react-landing-app-service
+  namespace: base
+  labels:
+    app: react-landing-app
+spec:
+  selector:
+    app: react-landing-app
+  ports:
+    - port: 3000
+      targetPort: 8080
