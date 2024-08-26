@@ -1,4 +1,4 @@
-name: Build and Push React Docker Image
+name: Build and Push React UI Docker Image
 
 permissions:
   security-events: write
