@@ -1,0 +1,34 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "fullName": "Trivy Vulnerability Scanner",
+          "informationUri": "https://github.com/aquasecurity/trivy",
+          "name": "Trivy",
+          "rules": [],
+          "version": "0.53.0"
+        }
+      },
+      "results": [],
+      "columnKind": "utf16CodeUnits",
+      "originalUriBaseIds": {
+        "ROOTPATH": {
+          "uri": "file:///"
+        }
+      },
+      "properties": {
+        "imageID": "sha256:bf717c72e5213437c57acd27f1967efd834497463e6b6edeb54c8b28245bc8b8",
+        "imageName": "panchanandevops/react-landing-page:2.0.3",
+        "repoDigests": [
+          "panchanandevops/react-landing-page@sha256:29615728b4852b1610cafb2250d72dc8eac0c52b3090fff5a82c4881f0cdeae5"
+        ],
+        "repoTags": [
+          "panchanandevops/react-landing-page:2.0.3"
+        ]
+      }
+    }
+  ]
+}
