@@ -20,13 +20,13 @@
         }
       },
       "properties": {
-        "imageID": "sha256:bf717c72e5213437c57acd27f1967efd834497463e6b6edeb54c8b28245bc8b8",
-        "imageName": "panchanandevops/react-landing-page:2.0.3",
+        "imageID": "sha256:b9c971e6a0c858351358b867523677f7cd5655b6fde655c36f49fbd6e91d4059",
+        "imageName": "panchanandevops/react-landing-page:2.0.4",
         "repoDigests": [
-          "panchanandevops/react-landing-page@sha256:29615728b4852b1610cafb2250d72dc8eac0c52b3090fff5a82c4881f0cdeae5"
+          "panchanandevops/react-landing-page@sha256:778e53fdddc5397a7f9212f4ee1346b7897374bfc11205dead0111f9593485a3"
         ],
         "repoTags": [
-          "panchanandevops/react-landing-page:2.0.3"
+          "panchanandevops/react-landing-page:2.0.4"
         ]
       }
     }
