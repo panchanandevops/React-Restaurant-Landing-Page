@@ -46,6 +46,8 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
+          cache-from: type=registry,ref=panchanandevops/react-landing-page:cache # Pull cache from the registry
+          cache-to: type=registry,ref=panchanandevops/react-landing-page:cache,mode=max # Push cache to the registry
 
       - name: Run Trivy for HIGH, CRITICAL CVEs and report
         uses: aquasecurity/trivy-action@master
