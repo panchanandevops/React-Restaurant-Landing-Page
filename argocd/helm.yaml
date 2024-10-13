@@ -17,7 +17,7 @@ spec:
       releaseName: my-react-app
   destination:
     server: https://kubernetes.default.svc # Kubernetes cluster API server address
-    namespace: dev
+    namespace: prod
   syncPolicy:
     automated:
       prune: true # Enable automatic pruning of resources not defined in Git
