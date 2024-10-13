@@ -38,7 +38,7 @@ jobs:
           tags: |
             type=semver,pattern={{version}}
 
-      - name: Build and push Vite React Docker image
+      - name: Build and push React Docker image
         uses: docker/build-push-action@v6
         with:
           context: . # Set the context to the root directory
