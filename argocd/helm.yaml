@@ -12,6 +12,8 @@ spec:
     targetRevision: main
     path: Deploy/React-helm-chart/ # Path within the Git repository containing application manifests
     helm:
+      valueFiles:
+        - values-prod.yaml
       releaseName: my-react-app
   destination:
     server: https://kubernetes.default.svc # Kubernetes cluster API server address
